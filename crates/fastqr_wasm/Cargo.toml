@@ -1,0 +1,17 @@
+[package]
+name = "fastqr-wasm"
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+version.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+fastqr-core = { path = "../fastqr_core" }
+fastqr-image = { path = "../fastqr_image" }
+js-sys.workspace = true
+wasm-bindgen.workspace = true
+web-sys.workspace = true
